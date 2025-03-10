@@ -172,3 +172,4 @@ cython_debug/
 
 egs/mnist/data
 egs/mnist/models
+egs/mnist/nohup.out
