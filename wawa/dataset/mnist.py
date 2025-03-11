@@ -7,7 +7,7 @@ def get_dataloaders(batch_size=32):
         transforms.Grayscale(num_output_channels=3),  # ResNet50은 3채널 입력 필요
         transforms.Resize((28, 28)),  # 크기를 유지 (원래는 224x224가 기본)
         transforms.ToTensor(),
-        transforms.Normalize((0.5,), (0.5,))  # MNIST 정규화
+        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))  # MNIST 정규화
     ])
 
     # MNIST 훈련 데이터

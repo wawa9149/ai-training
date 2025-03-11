@@ -15,7 +15,7 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 transform = transforms.Compose([
     transforms.Grayscale(num_output_channels=3),  # ResNet은 3채널 입력을 기대하므로 변환
     transforms.ToTensor(),
-    transforms.Normalize((0.5,), (0.5,))
+    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
 ])
 
 train_dataset = torchvision.datasets.MNIST(root="data/mnist", train=True, transform=transform, download=True)
