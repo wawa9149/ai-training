@@ -32,14 +32,14 @@ class MNIST:
         logger.info("Training the model")
         config = load_config()
         train_loader, _ = get_dataloaders(config['batch_size'])
-        model = get_model()
+        model = get_model(num_classes=10)
         train(model, train_loader, config)
 
     def test(self):
         logger.info("Testing the model")
         config = load_config()
         _, test_loader = get_dataloaders(config['batch_size'])
-        model = get_model()
+        model = get_model(num_classes=10)
         
         # ✅ 모델 가중치 불러오기
         model_path = "models/resnet_mnist.pth"
@@ -54,7 +54,7 @@ class MNIST:
 
     def infer(self):
         logger.info("Running inference")
-        model = get_model()
+        model = get_model(num_classes=10)
         model_path = "models/resnet_mnist.pth"
         if not os.path.exists(model_path):
             logger.error(f"Model file not found: {model_path}")
