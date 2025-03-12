@@ -5,7 +5,7 @@ from wawa.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-def train(model, train_loader, config):
+def train(model, dataset_name, train_loader, config):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
     
@@ -47,5 +47,5 @@ def train(model, train_loader, config):
 
         logger.info(f"✅ Epoch {epoch+1} finished | Avg Loss: {epoch_loss:.4f} | Accuracy: {epoch_accuracy:.2f}%")
 
-    torch.save(model.state_dict(), 'models/resnet_mnist.pth')
-    logger.info(f"💾 Model saved: models/resnet_mnist.pth | Final Loss: {epoch_loss:.4f} | Final Accuracy: {epoch_accuracy:.2f}%")
+    torch.save(model.state_dict(), f"models/{dataset_name}.pth")
+    logger.info(f"💾 Model saved: models/{dataset_name}.pth | Final Loss: {epoch_loss:.4f} | Final Accuracy: {epoch_accuracy:.2f}%")
