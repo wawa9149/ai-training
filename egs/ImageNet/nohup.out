@@ -1,0 +1,284 @@
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 804: forward compatibility was attempted on non supported HW (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+2025-03-05 PM 03:57:11.015: __main__            : INFO: main(): Arguments: Namespace(task='train', model='resnet')
+2025-03-05 PM 03:57:11.015: __main__            : INFO: __init__(): Arguments: Namespace(task='train', model='resnet')
+2025-03-05 PM 03:57:11.015: __main__            : INFO: train(): Training the model
+Traceback (most recent call last):
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 52, in <module>
+    main()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 48, in main
+    mnist.run()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 36, in run
+    self.train()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 25, in train
+    train()
+  File "/home/wawa9149/workspace/study/ai-training/wawa/train/resnet.py", line 52, in train
+    loss.backward()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 804: forward compatibility was attempted on non supported HW (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+2025-03-05 PM 03:57:29.396: __main__            : INFO: main(): Arguments: Namespace(task='train', model='resnet')
+2025-03-05 PM 03:57:29.396: __main__            : INFO: __init__(): Arguments: Namespace(task='train', model='resnet')
+2025-03-05 PM 03:57:29.397: __main__            : INFO: train(): Training the model
+2025-03-09 PM 05:53:49.576: __main__            : INFO: main(): Arguments: Namespace(task='train', model='resnet')
+2025-03-09 PM 05:53:49.576: __main__            : INFO: __init__(): Arguments: Namespace(task='train', model='resnet')
+2025-03-09 PM 05:53:49.576: __main__            : INFO: train(): Training the model
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 804: forward compatibility was attempted on non supported HW (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+2025-03-09 PM 05:53:50.373: wawa.train.train    : INFO: train(): 🔥 Training started | Device: cpu | Epochs: 10 | Batch size: 32
+2025-03-09 PM 05:53:50.374: wawa.train.train    : INFO: train(): 📢 Epoch 1/10 started...
+2025-03-09 PM 05:54:46.259: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.1911
+2025-03-09 PM 05:55:42.375: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.2147
+2025-03-09 PM 05:56:38.607: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0532
+2025-03-09 PM 05:57:35.204: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.0770
+2025-03-09 PM 05:58:31.451: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.2131
+2025-03-09 PM 05:59:27.980: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0127
+2025-03-09 PM 06:00:24.440: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.1191
+2025-03-09 PM 06:01:21.072: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.0028
+2025-03-09 PM 06:02:17.821: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0782
+2025-03-09 PM 06:02:39.066: wawa.train.train    : INFO: train(): ✅ Epoch 1 finished | Avg Loss: 0.3035 | Accuracy: 92.15%
+2025-03-09 PM 06:02:39.067: wawa.train.train    : INFO: train(): 📢 Epoch 2/10 started...
+2025-03-09 PM 06:03:35.654: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.1125
+2025-03-09 PM 06:04:32.057: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0026
+2025-03-09 PM 06:05:28.557: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0156
+2025-03-09 PM 06:06:25.127: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.0169
+2025-03-09 PM 06:07:21.782: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 2.4418
+2025-03-09 PM 06:08:18.301: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.1771
+2025-03-09 PM 06:09:14.818: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.0876
+2025-03-09 PM 06:10:11.180: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.0333
+2025-03-09 PM 06:11:18.797: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0771
+2025-03-09 PM 06:11:41.481: wawa.train.train    : INFO: train(): ✅ Epoch 2 finished | Avg Loss: 0.1540 | Accuracy: 96.27%
+2025-03-09 PM 06:11:41.482: wawa.train.train    : INFO: train(): 📢 Epoch 3/10 started...
+2025-03-09 PM 06:12:40.658: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.0114
+2025-03-09 PM 06:13:39.658: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0095
+2025-03-09 PM 06:14:37.930: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0722
+2025-03-09 PM 06:15:36.192: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.0643
+2025-03-09 PM 06:16:35.240: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.4900
+2025-03-09 PM 06:17:33.862: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0041
+2025-03-09 PM 06:18:32.239: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.2845
+2025-03-09 PM 06:19:30.212: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.0061
+2025-03-09 PM 06:20:28.269: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.1480
+2025-03-09 PM 06:20:49.990: wawa.train.train    : INFO: train(): ✅ Epoch 3 finished | Avg Loss: 0.1388 | Accuracy: 96.97%
+2025-03-09 PM 06:20:49.991: wawa.train.train    : INFO: train(): 📢 Epoch 4/10 started...
+2025-03-09 PM 06:21:48.128: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.1657
+2025-03-09 PM 06:22:46.499: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.1499
+2025-03-09 PM 06:23:44.544: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0048
+2025-03-09 PM 06:24:42.792: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.1813
+2025-03-09 PM 06:25:41.164: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.0235
+2025-03-09 PM 06:26:39.472: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0324
+2025-03-09 PM 06:27:37.563: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.0085
+2025-03-09 PM 06:28:35.835: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.0003
+2025-03-09 PM 06:29:34.176: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0117
+2025-03-09 PM 06:29:55.940: wawa.train.train    : INFO: train(): ✅ Epoch 4 finished | Avg Loss: 0.0757 | Accuracy: 98.00%
+2025-03-09 PM 06:29:55.941: wawa.train.train    : INFO: train(): 📢 Epoch 5/10 started...
+2025-03-09 PM 06:30:54.284: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.0067
+2025-03-09 PM 06:31:52.430: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0102
+2025-03-09 PM 06:32:50.789: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0228
+2025-03-09 PM 06:33:49.081: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.0302
+2025-03-09 PM 06:34:47.158: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.0388
+2025-03-09 PM 06:35:45.252: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0087
+2025-03-09 PM 06:36:43.313: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.0149
+2025-03-09 PM 06:37:41.665: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.1154
+2025-03-09 PM 06:38:39.853: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0439
+2025-03-09 PM 06:39:01.553: wawa.train.train    : INFO: train(): ✅ Epoch 5 finished | Avg Loss: 0.1218 | Accuracy: 97.14%
+2025-03-09 PM 06:39:01.553: wawa.train.train    : INFO: train(): 📢 Epoch 6/10 started...
+2025-03-09 PM 06:39:59.865: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.0128
+2025-03-09 PM 06:40:58.781: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0503
+2025-03-09 PM 06:42:20.589: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0065
+2025-03-09 PM 06:43:27.412: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.1956
+2025-03-09 PM 06:44:25.148: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.5193
+2025-03-09 PM 06:45:22.738: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0081
+2025-03-09 PM 06:46:20.114: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.4217
+2025-03-09 PM 06:47:17.792: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.0074
+2025-03-09 PM 06:48:23.412: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.3042
+2025-03-09 PM 06:48:45.824: wawa.train.train    : INFO: train(): ✅ Epoch 6 finished | Avg Loss: 0.0703 | Accuracy: 98.19%
+2025-03-09 PM 06:48:45.825: wawa.train.train    : INFO: train(): 📢 Epoch 7/10 started...
+2025-03-09 PM 06:49:43.244: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.0153
+2025-03-09 PM 06:50:40.236: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0054
+2025-03-09 PM 06:51:36.966: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0220
+2025-03-09 PM 06:52:34.271: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.1017
+2025-03-09 PM 06:53:32.063: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.0006
+2025-03-09 PM 06:54:30.175: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0092
+2025-03-09 PM 06:55:28.139: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.0961
+2025-03-09 PM 06:56:26.074: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.1659
+2025-03-09 PM 06:57:23.919: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0100
+2025-03-09 PM 06:57:45.609: wawa.train.train    : INFO: train(): ✅ Epoch 7 finished | Avg Loss: 0.0633 | Accuracy: 98.38%
+2025-03-09 PM 06:57:45.610: wawa.train.train    : INFO: train(): 📢 Epoch 8/10 started...
+2025-03-09 PM 06:58:43.821: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.0043
+2025-03-09 PM 06:59:41.748: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0037
+2025-03-09 PM 07:00:39.602: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0013
+2025-03-09 PM 07:01:37.559: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.0306
+2025-03-09 PM 07:02:35.623: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.0181
+2025-03-09 PM 07:03:33.573: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0582
+2025-03-09 PM 07:04:31.489: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.0239
+2025-03-09 PM 07:05:39.073: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.2212
+2025-03-09 PM 07:06:37.548: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0734
+2025-03-09 PM 07:06:59.158: wawa.train.train    : INFO: train(): ✅ Epoch 8 finished | Avg Loss: 0.0525 | Accuracy: 98.61%
+2025-03-09 PM 07:06:59.159: wawa.train.train    : INFO: train(): 📢 Epoch 9/10 started...
+2025-03-09 PM 07:07:56.951: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.0053
+2025-03-09 PM 07:08:55.184: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0314
+2025-03-09 PM 07:09:53.190: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0459
+2025-03-09 PM 07:10:51.284: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.0073
+2025-03-09 PM 07:11:48.799: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.0688
+2025-03-09 PM 07:12:46.408: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0013
+2025-03-09 PM 07:13:44.156: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.2112
+2025-03-09 PM 07:14:41.833: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.0172
+2025-03-09 PM 07:15:39.316: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0610
+2025-03-09 PM 07:16:00.962: wawa.train.train    : INFO: train(): ✅ Epoch 9 finished | Avg Loss: 0.0467 | Accuracy: 98.77%
+2025-03-09 PM 07:16:00.963: wawa.train.train    : INFO: train(): 📢 Epoch 10/10 started...
+2025-03-09 PM 07:16:58.054: wawa.train.train    : INFO: train():   🏃 Batch 200/1875 | Loss: 0.0010
+2025-03-09 PM 07:17:55.254: wawa.train.train    : INFO: train():   🏃 Batch 400/1875 | Loss: 0.0046
+2025-03-09 PM 07:18:52.576: wawa.train.train    : INFO: train():   🏃 Batch 600/1875 | Loss: 0.0064
+2025-03-09 PM 07:19:50.121: wawa.train.train    : INFO: train():   🏃 Batch 800/1875 | Loss: 0.0070
+2025-03-09 PM 07:20:47.430: wawa.train.train    : INFO: train():   🏃 Batch 1000/1875 | Loss: 0.0082
+2025-03-09 PM 07:21:44.547: wawa.train.train    : INFO: train():   🏃 Batch 1200/1875 | Loss: 0.0249
+2025-03-09 PM 07:22:41.341: wawa.train.train    : INFO: train():   🏃 Batch 1400/1875 | Loss: 0.2537
+2025-03-09 PM 07:23:37.842: wawa.train.train    : INFO: train():   🏃 Batch 1600/1875 | Loss: 0.0118
+2025-03-09 PM 07:24:34.335: wawa.train.train    : INFO: train():   🏃 Batch 1800/1875 | Loss: 0.0381
+2025-03-09 PM 07:24:55.497: wawa.train.train    : INFO: train(): ✅ Epoch 10 finished | Avg Loss: 0.0422 | Accuracy: 98.96%
+2025-03-09 PM 07:24:55.765: wawa.train.train    : INFO: train(): 💾 Model saved: models/resnet_mnist.pth | Final Loss: 0.0422 | Final Accuracy: 98.96%
+Traceback (most recent call last):
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 12, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Traceback (most recent call last):
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 17, in <module>
+    from wawa.infer.infer import infer
+  File "/home/wawa9149/workspace/study/ai-training/wawa/infer/infer.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/matplotlib/__init__.py", line 997, in <module>
+    rcParamsDefault = _rc_params_in_file(
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/matplotlib/__init__.py", line 934, in _rc_params_in_file
+    config[key] = val  # try to convert to proper type or raise
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/matplotlib/__init__.py", line 769, in __setitem__
+    cval = self.validate[key](val)
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/matplotlib/rcsetup.py", line 102, in f
+    val = [scalar_validator(v.strip()) for v in s.split(',')
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 13, in <module>
+    from wawa.dataset.mnist import get_dataloaders
+  File "/home/wawa9149/workspace/study/ai-training/wawa/dataset/mnist.py", line 1, in <module>
+    import torchvision.transforms as transforms
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/__init__.py", line 10, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/models/convnext.py", line 8, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/ops/__init__.py", line 23, in <module>
+    from .poolers import MultiScaleRoIAlign
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/ops/poolers.py", line 10, in <module>
+    from .roi_align import roi_align
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torchvision/ops/roi_align.py", line 7, in <module>
+    from torch._dynamo.utils import is_compile_supported
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/_dynamo/__init__.py", line 3, in <module>
+    from . import convert_frame, eval_frame, resume_execution
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/_dynamo/convert_frame.py", line 33, in <module>
+    from torch._dynamo.symbolic_convert import TensorifyState
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/_dynamo/symbolic_convert.py", line 27, in <module>
+    from torch._dynamo.exc import TensorifyScalarRestartAnalysis
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/_dynamo/exc.py", line 11, in <module>
+    from .utils import counters
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/_dynamo/utils.py", line 1752, in <module>
+    if has_triton_package():
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/utils/_triton.py", line 9, in has_triton_package
+    from triton.compiler.compiler import triton_key
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/__init__.py", line 8, in <module>
+    from .runtime import (
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/runtime/__init__.py", line 1, in <module>
+    from .autotuner import (Autotuner, Config, Heuristics, autotune, heuristics)
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/runtime/autotuner.py", line 9, in <module>
+    from .jit import KernelInterface
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/runtime/jit.py", line 12, in <module>
+    from ..runtime.driver import driver
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/runtime/driver.py", line 1, in <module>
+    from ..backends import backends
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/backends/__init__.py", line 50, in <module>
+    backends = _discover_backends()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/backends/__init__.py", line 44, in _discover_backends
+    driver = _load_module(name, os.path.join(root, name, 'driver.py'))
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/backends/__init__.py", line 12, in _load_module
+    spec.loader.exec_module(module)
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/backends/amd/driver.py", line 7, in <module>
+    from triton.runtime.build import _build
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/triton/runtime/build.py", line 8, in <module>
+    import setuptools
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/pkg_resources/__init__.py", line 78, in <module>
+    __import__('pkg_resources.extern.packaging.requirements')
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/pkg_resources/_vendor/packaging/requirements.py", line 56, in <module>
+    VERSION_PEP440 = Regex(Specifier._regex_str, re.VERBOSE | re.IGNORECASE)
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/pkg_resources/_vendor/pyparsing.py", line 2792, in __init__
+    self.re = re.compile(self.pattern, self.flags)
+  File "/usr/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.10/sre_parse.py", line 955, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 512, in _parse
+    sourceget()
+  File "/usr/lib/python3.10/sre_parse.py", line 257, in get
+    self.__next()
+  File "/usr/lib/python3.10/sre_parse.py", line 234, in __next
+    def __next(self):
+KeyboardInterrupt
+2025-03-10 AM 12:56:28.934: __main__            : INFO: main(): Arguments: Namespace(task='train', model='resnet', image_path=None)
+2025-03-10 AM 12:56:28.935: __main__            : INFO: __init__(): Arguments: Namespace(task='train', model='resnet', image_path=None)
+2025-03-10 AM 12:56:28.935: __main__            : INFO: train(): Training the model
+/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 804: forward compatibility was attempted on non supported HW (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+2025-03-10 AM 12:56:29.659: wawa.train.train    : INFO: train(): 🔥 Training started | Device: cpu | Epochs: 10 | Batch size: 32
+2025-03-10 AM 12:56:29.659: wawa.train.train    : INFO: train(): 📢 Epoch 1/10 started...
+Traceback (most recent call last):
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 100, in <module>
+    main()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 97, in main
+    mnist.run()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 85, in run
+    self.train()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/mnist.py", line 36, in train
+    train(model, train_loader, config)
+  File "/home/wawa9149/workspace/study/ai-training/wawa/train/train.py", line 31, in train
+    loss.backward()
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/wawa9149/workspace/study/ai-training/egs/mnist/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
