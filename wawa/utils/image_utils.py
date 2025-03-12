@@ -5,7 +5,7 @@ def preprocess_image(image_path):
     """이미지를 MNIST 모델이 처리할 수 있도록 변환"""
     transform = transforms.Compose([
         transforms.Grayscale(num_output_channels=3),  # ResNet50은 3채널 입력 필요
-        transforms.Resize((28, 28)),  # 크기 조정
+        transforms.Resize((224, 224)),  # ResNet50은 최소 224x224 크기의 이미지 필요
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))  # MNIST 정규화
     ])

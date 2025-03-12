@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 def get_dataloaders(batch_size=32):
     transform = transforms.Compose([
         transforms.Grayscale(num_output_channels=3),  # ResNet50은 3채널 입력 필요
-        transforms.Resize((28, 28)),  # 크기를 유지 (원래는 224x224가 기본)
+        transforms.Resize((224, 224)),  # ResNet50은 최소 224x224 크기의 이미지 필요
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))  # MNIST 정규화
     ])
