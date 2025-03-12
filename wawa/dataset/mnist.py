@@ -4,10 +4,10 @@ from torch.utils.data import DataLoader
 
 def get_dataloaders(batch_size=32):
     transform = transforms.Compose([
-        transforms.Grayscale(num_output_channels=3),  # ResNet50은 3채널 입력 필요
-        transforms.Resize((224, 224)),  # ResNet50은 최소 224x224 크기의 이미지 필요
+        transforms.Grayscale(num_output_channels=3),  # ResNet은 3채널 입력 필요
+        transforms.Resize((224, 224)),  # ResNet의 기본 입력 크기 224x224
         transforms.ToTensor(),
-        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))  # MNIST 정규화
+        transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))  # ImageNet 정규화 값
     ])
 
     # MNIST 훈련 데이터
