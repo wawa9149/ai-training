@@ -2,7 +2,7 @@ import yaml
 from dataset.mnist import get_dataloaders
 from models.resnet import get_model
 from train.train import train_model
-from eval.evaluate import evaluate_model
+from wawa.test.test import evaluate_model
 
 def load_config(config_path="configs/config.yaml"):
     with open(config_path, 'r') as f:
